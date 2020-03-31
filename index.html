@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	  <meta name="viewport" content="width=device-width , initial-scale=1.0">
+	  
+	  <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+	  <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+	  <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+	  <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+	  <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+	  <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+	    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.4/js/bootstrap.min.js">
+	  
+	  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet">
+	 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	 <style type="text/css">
+		
+		#slider
+		 {
+			  border: 20px solid white;
+			  box-shadow: 0px 0px 5px 2px #0f0d0d;
+		      overflow: hidden;
+		 }
+		#slider figure 
+		 {
+			position: relative;
+			width: 1000%; /* 100% for each picture, 10 pictures = 1000% */
+			margin: 0;
+			left: 0;
+			animation: 30s slider infinite;
+		 }
+			#slider figure img 
+		 {
+				width: 10%; /* 100 / 10 pictures = 10% */
+				height: 400px; /* to set a maximum height  */
+				float: left;
+				/*  next 2 to continue responsive with the maximum height  */
+				max-width: 60%;
+				min-height: 100%;
+				object-fit: cover;
+		 }
+		 
+		@keyframes slider {
+		0% { left: 0; } /* you must divide 100% fot the amout of images you have */
+		7% { left: 0%; } /* these intermediate steps (7%, 17%, 27%, ... will make the transition speed faster */
+		10% { left: -100%; } /* because my total width: 1000% (10x 100% for 10 images), I will use 10% for each image */
+		17% { left: -100%; }
+		20% { left: -200%; }
+		27% { left: -200%; }
+		30% { left: -300%; }
+		37% { left: -300%; }
+		40% { left: -400%; }
+		47% { left: -400%; }
+		50% { left: -500%; }
+		57% { left: -500%; }
+		60% { left: -600%; }
+		67% { left: -600%; }
+		70% { left: -700%; }
+		77% { left: -700%; }
+		80% { left: -800%; }
+		87% { left: -800%; }
+		90% { left: -900%; }
+		100% { left: -900%; }
+}
+	  </style>
+	
+	  <title>TATVAMASI</title>
+	  
+	    <link rel="apple-touch-icon" sizes="57x57" href="/resources/favicons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/resources/favicons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/resources/favicons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/resources/favicons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/resources/favicons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/resources/favicons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/resources/favicons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/resources/favicons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/resources/favicons/apple-touch-icon-180x180.png">
+	  
+  </head>
+	
+	
+	
+  <body>
+	  
+	  
+	  <header>
+		     <nav class="sticky">
+		 <!-- <nav>-->
+		      <div class="row">
+		 <img src="resources/img/logo.png" alt="APDIO Logo" class="logo">
+			  
+			    <ul class="main-nav js--main-nav">
+				  <li><a href="#features">HOME</a></li>
+				  <li><a href="#Events">EVENTS</a></li>
+				  <li><a href="#Celebrations">CELEBRATIONS</a></li>
+				  <li><a href="#Team">TEAM</a></li>
+				  <li><a href="#">BECOME A MEMBER</a></li>
+				  <li><a href="#Contact">CONTACT</a></li>
+			   </ul>
+				  <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+			  </div>
+			  
+		  </nav>
+		  
+		  
+	            <div class="hero-text-box">
+					<div class="row">
+					   <div class="Head-conatiner">
+						   <span class="text1">TATVAMASI</span>
+						   <span class="text2">Kerala Hindu's London Ontario</span>
+						</div>
+					</div>
+					
+			      </div>
+		  
+		<!--  <div class="hero-text-box">
+					<div class="row">
+					   <h4>
+						   TATVAMASI
+						</h4>
+						
+					</div>
+					<div class="row">
+			       
+			        <h1>London&nbsp;&nbsp;Ontario&nbsp;&nbsp;Malayalee&nbsp;&nbsp;Assocation</h1>
+					
+					</div>-->
+			      
+	  </header>
+	  
+	    <section class="section-features js--section--home" id="features" >
+		  <div class="row">
+			 
+		  <h2>About us</h2>
+		  <p class="long-copy">
+			  Tatvamasi, London, Ontario, Canada, brings together Hindus and their cultural and religious traditions from Kerala, the “God’s own country”, a tropical paradise located in Southern India. Tatvamasi, a Sanskrit phrase, translated as “thou art that” is a description of the relationship between the Individual and the Brahman, the absolute reality. Mentioned in Chandogya Upanishad, Tat Tvam Asi is considered a Mahavakya and is revealed by Uddalaka Aruni to his son Svetaketu. Similar conclusions have been arrived by many yogis and saints, an example being: Aham Brahmasmi “I am Brahman” as mentioned in Brihadarankya Upanishad.
+		  </p>
+		  </div>
+	  
+		
+	  </section>
+	  
+
+	  
+	   <section class="section-events js--section--events" id="Events">
+		     <div class="row">
+			<h2>Upcoming Events</h2>
+				
+				
+					  <div class="leftBox js--wp-3">
+					  <div class="content">
+					      <h4>Events And Shows </h4>
+						  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exercitation ulliam corper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+					 </div>
+					 </div>
+					 
+					 <div class="events">
+					     <ul>
+							 <li class="js--wp-4">
+							     <div class="time">
+								 <h5>24<br><span>April</span></h5>
+								 </div>
+								 <div class="details">
+								     <h4>Where does it comes from</h4>
+									 <p>Lorem ipsum dolor sit amet, ius et ignota deseruisse. In nihil verear nostrum usu. Primis consetetur vix id. Te affert prodesset ius, regione voluptatum dissentias te est. </p>
+									 <a href="#">View Details</a>
+								 </div>
+								 
+								 <div style="clear: both;"></div>
+							 </li>
+							 
+							 <li class="js--wp-4">
+							     <div class="time">
+								 <h5>30<br><span>April</span></h5>
+								 </div>
+								 <div class="details">
+								     <h4>Where does it comes from</h4>
+									 <p>Lorem ipsum dolor sit amet, ius et ignota deseruisse. In nihil verear nostrum usu. Primis consetetur vix id. Te affert prodesset ius, regione voluptatum dissentias te est. </p>
+									 <a href="#">View Details</a>
+								 </div>
+								 
+								 <div style="clear: both;"></div>
+							 </li>
+							 
+							 
+						 
+						 </ul>
+					 </div>
+					 
+				
+				 </div>
+		   
+	  </section>
+	  
+	  <section class="section-steps" id="Celebrations">
+		 
+		  <div class="row">
+			<h2>CELEBRATIONS</h2>
+		   </div>
+           <div class="row">
+		      <div id="slider">
+			  <figure>
+				 	<img src="resources/img/1.jpg">
+				  	<img src="resources/img/2.jpg">
+				  	<img src="resources/img/3.jpg">
+				  	<img src="resources/img/4.jpg">
+				    <img src="resources/img/5.jpg">
+				    <img src="resources/img/6.jpg">
+				    <img src="resources/img/7.jpg">
+				    <img src="resources/img/8.jpg">
+				    <img src="resources/img/9.jpg">
+				    <img src="resources/img/10.jpg">
+				   
+			  </figure>
+			  </div>
+		  
+		  </div>
+	  </section>
+	  
+	  <section class="section-cities js--section-features" id="Team" >
+	    <div class="row">
+			  <h2>Meet the team</h2>
+		  </div>
+		      <div class="row js--wp-1">
+				
+
+		  
+			  <div class="card">
+				  <div class="box">
+					  <img src="resources/img/passportMale.jpg" alt="Ashok Sharma">
+					  <h3>Name</h3>
+					  <h4>Role</h4>
+					  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+				  </div>
+			  </div>
+			  <div class="card">
+				  <div class="box">
+					  <img src="resources/img/passportMale.jpg" alt="Ashok Sharma">
+					  <h3>Name</h3>
+					  <h4>Role</h4>
+					  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+				  </div>
+			  </div>
+			  <div class="card">
+				  <div class="box">
+					  <img src="resources/img/passportMale.jpg" alt="Ashok Sharma">
+					  <h3>Name</h3>
+					  <h4>Role</h4>
+					  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+				  </div>
+			  </div>
+			  <div class="card">
+				  <div class="box">
+					  <img src="resources/img/passportMale.jpg" alt="Ashok Sharma">
+					  <h3>Name</h3>
+					  <h4>Role</h4>
+					  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+				  </div>
+			  </div>
+			  			  </div>
+		  
+	  </section>
+	  
+
+	  <section class="section-form" id="Contact">
+		   <div class="row">
+			 <h2>WE'RE HAPPY TO HEAR FROM YOU</h2>
+		 </div>
+		<div class="row">
+			   
+		  <div class="contact-form">
+			 
+		    <div class="row">
+				<div class="txtb">
+					<label>Full Name:</label>
+				<input type="text" name="" value="" >
+				</div>
+				<div class="txtb">
+					<label>Email:</label>
+				<input type="text" name="" value="" >
+				</div>
+				<div class="txtb">
+					<label>Phone Number:</label>
+				<input type="text" name="" value="">
+				</div>
+				<div class="txtb">
+					<label>Message:</label>
+				<textarea></textarea>
+				</div>
+				
+				<!--<a class="btn">Send Message</a>-->
+<input type="submit"  value="Send Message">
+			
+			  </div>
+		  
+		  </div> 
+			   <div class="PersonalContactMain">
+			
+				     <div class="PersonalContact1">
+					   <i class="icon-small1"><ion-icon name="phone-portrait"></ion-icon></i>
+					    <p>(444)-444-4444</p>
+					  </div>
+				   
+				   <div class="PersonalContact2">
+					   <i class="icon-small2"><ion-icon name="mail"></ion-icon></i><a href="mailto:apdioassociation@gmail.com" target="_top"><p>info@tatvamasi.ca</p></a>
+					   
+					  </div>
+			   </div>
+			     </div>
+		 
+		  
+	  </section>
+	  
+	  
+	    <section class="section-plans">
+	      <div class="row">
+			  <h2>Location &amp; other documents</h2>
+		  </div>
+		  
+			  <div class="row">
+			  <div class="col span-1-of-2 steps-box">
+				 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.161210202235!2d-79.5248569844978!3d43.79026777911689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2fb6ccad9a5d%3A0x4df7443e311651a3!2s7581%20Jane%20St%20%23202%2C%20Concord%2C%20ON%20L4K%201X3!5e0!3m2!1sen!2sca!4v1572052540416!5m2!1sen!2sca" frameborder="0" style="border:0; width: 100%; height: 500px;" allowfullscreen></iframe>
+				  
+				 
+			  </div>
+			  <div class="col span-1-of-2 steps-box ">
+				  <div class="law">
+				  <ul>
+				  <div class="works-step">
+					  <div>1</div>
+					  <li><a href="#" target="_blank">Document1</a></li>
+				  </div>
+				  <div class="works-step">
+					  <div>2</div>
+					 <li><a href="#" target="_blank">Document2</a></li>
+				  </div>
+				  <div class="works-step">
+					  <div>3</div>
+					  <li><a href="#" target="_blank">Document3</a></li>
+				  </div>
+				  
+				   <div class="works-step">
+					  <div>4</div>
+					 <li><a href="#" target="_blank">Document4</a></li>
+				  </div>
+				  
+				   <div class="works-step">
+					  <div>5</div>
+					<li><a href="#" target="_blank">Document5</a></li>
+				  </div>
+				   </ul>
+				
+			  </div>
+			
+				
+		  </div>
+			   
+		   </div>
+	  </section>
+	  
+	 
+	  <footer>
+	       <div class="row">
+			       <div class="col span-1-of-2">
+					   <ul class="footer-nav">
+						   <li><a href="#">About us</a></li>
+						   <li><a href="#">Blog</a></li>
+						   <li><a href="#">Press</a></li>
+						   <li><a href="#">iOS App</a></li>
+						   <li><a href="#">Android App</a></li>
+					   </ul>
+				   </div>
+			   
+			       <div class="col span-1-of-2">
+					   <ul class="social-links">
+					       <li><a target="_blank" href="https://www.facebook.com/tatvamasilondonontario/"><i class="ion-social-facebook"></i></a></li>
+						   <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+						   <li><a target="_blank" href="https://www.youtube.com/channel/UCN26yYHnyr7aKP2eQqNGA2g/featured"><i class="ion-social-youtube"></i></a></li>
+						   <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+					   </ul>
+				   </div>
+		   </div>
+		  <div class="row">
+			  <p>
+			 Copyright &copy; 2020 by TATVAMASI. All rights reserved. Developed by <a href="https://www.linkedin.com/in/neethu-mathew-SD437/" target="_blank">Neethu Mathew</a>
+			  </p>
+		  </div>
+		  
+	  </footer>
+	  
+  </body>	
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	
+	<script src="vendors/js/jquery.waypoints.min.js"></script>
+	 <script src="resources/js/script.js"></script>
+	
+
+	
+</html>
+
+
+ 	
+
